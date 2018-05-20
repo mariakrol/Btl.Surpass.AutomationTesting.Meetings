@@ -68,7 +68,7 @@
     <Compile Include="ReferenceAndValueTypes\C_BoxingUnboxing.cs" />
     <Compile Include="Strings\A_DeclarationOfStrings.cs" />
     <Compile Include="Strings\B_CreationOfStrings.cs" />
-    <Compile Include="Strings\E_ProcessDynamicText.cs" />
+    <Compile Include="Strings\E_DynamicTextProcessing.cs" />
     <Compile Include="Strings\D_DealingWithSubstrings.cs" />
     <Compile Include="Strings\C_MutationsOfStrings.cs" />
     <Compile Include="Utilities.cs" />

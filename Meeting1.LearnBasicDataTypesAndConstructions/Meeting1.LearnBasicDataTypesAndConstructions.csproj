@@ -61,7 +61,7 @@
     <Compile Include="Enumerations\DayWithBaseByte.cs" />
     <Compile Include="Enumerations\DayWithBaseInt.cs" />
     <Compile Include="ParametersAndModificators\A_NamedAndOptionalParameters.cs" />
-    <Compile Include="ParametersAndModificators\B_ModificatorsOfParameters.cs" />
+    <Compile Include="ParametersAndModificators\B_ParameterModifiers.cs" />
     <Compile Include="ReferenceAndValueTypes\E_OverrideEqualsAndGetHashCode.cs" />
     <Compile Include="ReferenceAndValueTypes\Employee.cs" />
     <Compile Include="ReferenceAndValueTypes\D_DeclareVariableAsVar.cs" />

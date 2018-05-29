@@ -1,6 +1,5 @@
 ﻿using System;
 using FluentAssertions;
-using Meeting2.LearnOop.ClassesWithConstructorsAndMethods;
 using Meeting2.LearnOop.EncapsulationSamples;
 using NUnit.Framework;
 

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using FluentAssertions;
-using Meeting2.LearnOop.InheritanceSamples.MultyInheritedVehicles;
+using Meeting2.LearnOop.InheritanceSamples.MultiInheritedVehicles;
 using Meeting2.LearnOop.InheritanceSamples.Vehicles;
 using NUnit.Framework;
 
@@ -21,7 +21,7 @@ namespace Meeting2.LearnOop
         public static void A_ChildClassGotMembersFromParent()
         {
             // ChangeColor method is introduced in the base class,
-            //but each child can use it
+            // but each child can use it
             var car = new Car(200);
             car.ChangeColor("Green");
 
@@ -29,13 +29,8 @@ namespace Meeting2.LearnOop
             bicycle.ChangeColor("Red");
         }
 
-        /// <summary>
-        /// If a class is inherited from other class and in addition 
-        /// it inherited from several interfaces, each got a behavior from
-        /// the base class and from each interface.
-        /// </summary>
         [Test]
-        public static void B_ClassWhichIsIheritedFromSeveralEntitysGotEachBehavior()
+        public static void B_ClassWhichIsInheritedFromClassAndInterfaces()
         {
             var companyVehicle = new CompanyVehicle(100)
             {
@@ -62,11 +57,11 @@ namespace Meeting2.LearnOop
         }
 
         [Test]
-        public static void C_SealedClassExtandable()
+        public static void C_SealedClassExtendable()
         {
             var bicycle = new Bicycle(30);
 
-            bicycle.UpBicycleSeat();
+            bicycle.PumpWheel();
         }
     }
 }

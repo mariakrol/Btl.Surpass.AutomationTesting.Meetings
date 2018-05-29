@@ -1,4 +1,4 @@
-﻿namespace Meeting2.LearnOop.InheritanceSamples.MultyInheritedVehicles
+﻿namespace Meeting2.LearnOop.InheritanceSamples.MultiInheritedVehicles
 {
     internal class Asset
     {

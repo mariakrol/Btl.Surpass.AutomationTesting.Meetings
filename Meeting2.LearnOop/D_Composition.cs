@@ -9,8 +9,9 @@ namespace Meeting2.LearnOop
     /// For example, an object of the Tractor class contain objects of the
     /// Wheel class and an object of nested class LoadingCrane,
     /// in addition to its own instance variables like "YearOfAssembly".
-    /// Object composition is used to represent "has-a" relationships: every employee has an address,
-    /// so every Tractor object has access to a place to store Wheels objects and a LoadingCrane object.
+    /// Object composition is used to represent "has-a" relationships:
+    /// every tractor has wheels and loading crane, so every
+    /// Tractor object has access to a place to store Wheels objects and a LoadingCrane object.
     /// </summary>
     [TestFixture]
     // ReSharper disable once InconsistentNaming

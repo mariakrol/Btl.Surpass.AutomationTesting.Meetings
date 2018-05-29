@@ -35,10 +35,10 @@ namespace Meeting2.LearnOop.EncapsulationSamples
         {
             if (_gift != null)
             {
-                throw new Exception("A gift is already packed!");
+                throw new InvalidOperationException("A gift is already packed!");
             }
 
-            _gift = gift ?? throw new Exception("Impossible to pack nothing!");
+            _gift = gift ?? throw new ArgumentException("Impossible to pack nothing!");
         }
 
         public override string ToString() =>

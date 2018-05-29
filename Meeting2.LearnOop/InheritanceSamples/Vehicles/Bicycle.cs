@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Meeting2.LearnOop.InheritanceSamples.Vehicles
 {
@@ -18,15 +19,6 @@ namespace Meeting2.LearnOop.InheritanceSamples.Vehicles
         {
         }
 
-        public override void IndicateTurn(bool isRightTurn)
-        {
-            if (isRightTurn)
-            {
-                Console.WriteLine("Up Right arm");
-                return;
-            }
-
-            Console.WriteLine("Up left arm");
-        }
+        public override void IndicateTurn(bool isRightTurn) => Trace.TraceInformation(isRightTurn ? "Up Right arm" : "Up left arm");
     }
 }

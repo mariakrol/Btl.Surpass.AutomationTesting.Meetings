@@ -28,11 +28,11 @@
       <FileName>InheritanceSamples\Vehicles\Car.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Meeting2.LearnOop.InheritanceSamples.Vehicles.Track" Collapsed="true">
+  <Class Name="Meeting2.LearnOop.InheritanceSamples.Vehicles.Truck" Collapsed="true">
     <Position X="6" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>InheritanceSamples\Vehicles\Track.cs</FileName>
+      <FileName>InheritanceSamples\Vehicles\Truck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

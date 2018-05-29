@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Meeting2.LearnOop.InheritanceSamples.MultyInheritedVehicles
+namespace Meeting2.LearnOop.InheritanceSamples.MultiInheritedVehicles
 {
     internal interface IInsured
     {

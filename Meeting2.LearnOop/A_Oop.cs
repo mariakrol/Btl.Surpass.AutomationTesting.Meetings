@@ -15,13 +15,13 @@ namespace Meeting2.LearnOop
     {
         /// <summary>
         /// C# supports the notion of a class type, which is the cornerstone of OOP.
-        /// A class may be composed of any number of members (such as constructors, properties, methods, and events)
-        /// and data points (fields). It is something like "prototype" of an object.
+        /// A class may be composed of any number of members (such as constructors, properties, methods, and events, fields). It is something like "blueprint" of an object.
         /// 
         /// An instance of a class - it is an object. Multiple objects can be created based on one class.
         /// </summary>
         /// 
-        /// public access modifier on the method means, that all 
+        /// public access modifier on the method means, that all code,
+        /// which have an access to the class, can call this method
         [Test]
         public static void A_CreateSeveralInstancesOfClass()
         {
@@ -30,8 +30,9 @@ namespace Meeting2.LearnOop
             var traineeBob = new TraineeReferenceType("Bob", 23);
 
             traineeBerta
+                .GetType()
                 .Should()
-                .BeAssignableTo(traineeBob.GetType(), "because they both are objects of one type");
+                .Be(traineeBob.GetType(), "because they both are objects of one type");
         }
 
         /// <summary>

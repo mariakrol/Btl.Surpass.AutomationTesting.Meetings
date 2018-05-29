@@ -1,8 +1,8 @@
 ﻿namespace Meeting2.LearnOop.InheritanceSamples.Vehicles
 {
-    internal class Track : MotorVehicle
+    internal class Truck : MotorVehicle
     {
-        public Track(int speed) : base(speed)
+        public Truck(int speed) : base(speed)
         {
         }
     }

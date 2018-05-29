@@ -35,19 +35,19 @@ namespace Meeting2.LearnOop
             // We cannot override data or store an incorrect one.
 
             Action packNothing = () => specialGift.PackGift(null);
-            packNothing.Should().Throw<Exception>();
+            packNothing.Should().Throw<ArgumentException>();
 
             specialGift
                 .PackGift("Tale");
 
             Action packAgain = () => specialGift.PackGift("Poem");
-            packAgain.Should().Throw<Exception>();
+            packAgain.Should().Throw<InvalidOperationException>();
         }
 
         /// <summary>
         /// Encapsulation also allows us to pay no attention to the
-        /// internal realization of class.
-        /// We can only call a method an it made everything under the hood
+        /// internal implementation of class.
+        /// We can only call a method and it made everything under the hood
         /// </summary>
         [Test]
         public static void B_EncapsulationAsHidingOfRealization()

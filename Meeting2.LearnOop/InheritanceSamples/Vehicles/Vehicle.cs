@@ -13,11 +13,7 @@
 
         public void ChangeColor(string newColor) => Color = newColor;
 
-        public virtual int IncreaseSpeed(int delta)
-        {
-            _speed += delta;
-            return _speed;
-        }
+        public virtual void IncreaseSpeed(int delta) => _speed += delta;
 
         public abstract void IndicateTurn(bool isRightTurn);
     }

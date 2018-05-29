@@ -8,7 +8,7 @@ namespace Meeting2.LearnOop.InheritanceSamples.Vehicles
         {
         }
 
-        public override int IncreaseSpeed(int delta) => base.IncreaseSpeed(delta * 2);
+        public override void IncreaseSpeed(int delta) => base.IncreaseSpeed(delta * 2);
 
         public override void IndicateTurn(bool isRightTurn)
         {

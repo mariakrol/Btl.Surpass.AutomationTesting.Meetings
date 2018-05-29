@@ -4,7 +4,6 @@ namespace Meeting2.LearnOop.CompositionSamples
 {
     internal class Wheel
     {
-
         public void Turn(bool isTurnRight)
         {
             if (isTurnRight)

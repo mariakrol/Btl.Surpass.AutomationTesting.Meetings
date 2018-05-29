@@ -16,6 +16,7 @@ namespace Meeting2.LearnOop.EncapsulationSamples
 
         // Color property protect _color field from accidental corruption.
         private string _color;
+
         public string Color
         {
             get => _color;
@@ -40,6 +41,7 @@ namespace Meeting2.LearnOop.EncapsulationSamples
             _gift = gift ?? throw new Exception("Impossible to pack nothing!");
         }
 
-        public override string ToString() => $"Gift with {_gift}, packed to the box with side {BoxSideSize} inch of {Color} color.";
+        public override string ToString() =>
+            $"Gift with {_gift}, packed to the box with side {BoxSideSize} inch of {Color} color.";
     }
 }

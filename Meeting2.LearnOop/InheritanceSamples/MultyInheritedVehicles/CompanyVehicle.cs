@@ -3,7 +3,6 @@ using Meeting2.LearnOop.InheritanceSamples.Vehicles;
 
 namespace Meeting2.LearnOop.InheritanceSamples.MultyInheritedVehicles
 {
-
     // If you uncomment code below, you will got an error: 'CS1721  Class 'CompanyVehicle' cannot have multiple base classes: 'Vehicle' and 'Asset'
     // Because C# does not allow multiple class inheritance
     // But it is possible to inherit class and interfaces

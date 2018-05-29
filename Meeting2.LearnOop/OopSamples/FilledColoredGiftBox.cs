@@ -16,7 +16,7 @@ namespace Meeting2.LearnOop.OopSamples
             Gift = gift;
         }
 
-        public FilledColoredGiftBox(object gift, string boxColor) : this (gift)
+        public FilledColoredGiftBox(object gift, string boxColor) : this(gift)
         {
             Trace.TraceInformation("In the constructor with two parameters - 'gift', 'box color'.");
 
@@ -36,10 +36,12 @@ namespace Meeting2.LearnOop.OopSamples
         }
 
         public void PrintCongratulation()
-            => Trace.TraceInformation($"Here is our gift for you, it is the {Gift}, and it is boxed to the {Color} cover. Enjoy and be happy!");
+            => Trace.TraceInformation(
+                $"Here is our gift for you, it is the {Gift}, and it is boxed to the {Color} cover. Enjoy and be happy!");
 
         public static string GetDeliveryServiceName() => _deliveryService;
 
-        public static void ChangeDeliveryServiceName(string deliveryServiceName) => _deliveryService = deliveryServiceName;
+        public static void ChangeDeliveryServiceName(string deliveryServiceName) =>
+            _deliveryService = deliveryServiceName;
     }
 }

@@ -21,7 +21,6 @@ namespace Meeting2.LearnOop
     /// Thus in your source code you can call a method on a base class,
     /// and cause a derived class's version of the method to be executed.
     /// </summary>
-
     [TestFixture]
     // ReSharper disable once InconsistentNaming
     internal static class E_Polymorphism
@@ -64,11 +63,14 @@ namespace Meeting2.LearnOop
             car.ChangeColor("White");
             Trace.TraceInformation(car.ToString());
 
-            ((Vehicle)car).ChangeColor("Green");
-            Trace.TraceInformation(car.ToString()); // <- a method from base class will called instead of new one, which should hide source method
+            ((Vehicle) car).ChangeColor("Green");
+            Trace.TraceInformation(car
+                .ToString()); // <- a method from base class will called instead of new one, which should hide source method
 
             // ReSharper disable once RedundantCast
-            ((Vehicle)car).IncreaseSpeed(12); // <- a method from MotorVehicle class will called, because it override a source method
+            ((Vehicle) car)
+                .IncreaseSpeed(
+                    12); // <- a method from MotorVehicle class will called, because it override a source method
         }
     }
 }

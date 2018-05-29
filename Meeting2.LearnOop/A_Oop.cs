@@ -57,7 +57,7 @@ namespace Meeting2.LearnOop
             emptyGiftBox
                 .Should()
                 .NotBeNull();
-            
+
             // Class with parametrized constructor
             var poem = "poem";
 

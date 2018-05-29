@@ -42,7 +42,6 @@ namespace Meeting2.LearnOop
                 Color = "Black",
                 SumInsured = 1000000,
                 Cost = 250000
-
             };
 
             Trace.TraceInformation($"Get value of property from the base class: {companyVehicle.Color}");

@@ -25,7 +25,7 @@ namespace Meeting2.LearnOop.InheritanceSamples.Vehicles
                 Console.WriteLine("Up Right arm");
                 return;
             }
-            
+
             Console.WriteLine("Up left arm");
         }
     }

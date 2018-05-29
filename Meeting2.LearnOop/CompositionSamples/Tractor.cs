@@ -26,7 +26,8 @@ namespace Meeting2.LearnOop.CompositionSamples
         private int YearOfAssembly { get; }
 
         public override string ToString()
-            => $"Tractor of {YearOfAssembly} assembly year with {Wheels.Length} wheels and crane of {Crane.CarryingCapacity} ton.";
+            =>
+                $"Tractor of {YearOfAssembly} assembly year with {Wheels.Length} wheels and crane of {Crane.CarryingCapacity} ton.";
 
         public void Turn(bool isTurnRight)
         {

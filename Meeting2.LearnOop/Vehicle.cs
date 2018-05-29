@@ -2,7 +2,7 @@
 
 namespace Meeting2.LearnOop
 {
-    internal class Vehicle
+    internal abstract class Vehicle
     {
         private int _speed;
 
@@ -23,7 +23,7 @@ namespace Meeting2.LearnOop
             }
             set
             {
-                if (!_currentColor.Equals(value))
+                if (_currentColor == null || !_currentColor.Equals(value))
                 {
                     _currentColor = value;
                 }
@@ -35,17 +35,24 @@ namespace Meeting2.LearnOop
             MaxWeight = 1000;
         }
 
-        public Vehicle(int speed)
+        protected Vehicle(int speed)
         {
             _speed = speed;
         }
 
-        public int IncreaseSpeed(int delta)
+        public void ChangeColor(string newColor)
+        {
+            Color = newColor;
+        }
+
+        public virtual int IncreaseSpeed(int delta)
         {
             _speed += delta;
 
             return _speed;
         }
+
+        public abstract void IndicateTurn(bool isRightTurn);
 
         public static int GetMaxWeight() => MaxWeight;
     }

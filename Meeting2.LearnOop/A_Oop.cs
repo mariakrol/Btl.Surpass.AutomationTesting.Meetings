@@ -1,4 +1,5 @@
-﻿using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
+﻿using FluentAssertions;
+using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
 using NUnit.Framework;
 
 namespace Meeting2.LearnOop
@@ -22,7 +23,8 @@ namespace Meeting2.LearnOop
             var traineeBob = new TraineeReferenceType("Bob", 23);
 
             traineeBerta
-                .sh
+                .Should()
+                .BeAssignableTo(traineeBob.GetType(), "because they both are objects of one type");
         }
     }
 }

@@ -40,6 +40,6 @@ namespace Meeting2.LearnOop.ClassesWithConstructorsAndMethods
 
         public static string GetDeliveryServiceName() => _deliveryService;
 
-        public static string ChangeDeliveryServiceName(string deliveryServiceName) => _deliveryService = deliveryServiceName;
+        public static void ChangeDeliveryServiceName(string deliveryServiceName) => _deliveryService = deliveryServiceName;
     }
 }

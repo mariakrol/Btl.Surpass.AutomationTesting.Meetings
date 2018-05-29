@@ -59,11 +59,14 @@
   <ItemGroup>
     <Compile Include="A_Oop.cs" />
     <Compile Include="Bicycle.cs" />
+    <Compile Include="B_Encapsulation.cs" />
     <Compile Include="CarWash.cs" />
-    <Compile Include="ClassesWithConstructors\FilledColoredGiftBox.cs" />
-    <Compile Include="ClassesWithConstructors\FilledGiftBox.cs" />
+    <Compile Include="EncapsulationSamples\DeliveryService.cs" />
+    <Compile Include="ClassesWithConstructorsAndMethods\FilledColoredGiftBox.cs" />
+    <Compile Include="ClassesWithConstructorsAndMethods\FilledGiftBox.cs" />
+    <Compile Include="EncapsulationSamples\SpecialFilledAndDecoratedGiftBox.cs" />
     <Compile Include="CompanyVehicle.cs" />
-    <Compile Include="ClassesWithConstructors\EmptyGiftBox.cs" />
+    <Compile Include="ClassesWithConstructorsAndMethods\EmptyGiftBox.cs" />
     <Compile Include="IAsset.cs" />
     <Compile Include="MotorVehicle.cs" />
     <Compile Include="Program.cs" />

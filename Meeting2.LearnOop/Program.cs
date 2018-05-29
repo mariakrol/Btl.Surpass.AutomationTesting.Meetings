@@ -1,4 +1,5 @@
 ﻿using System;
+using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
 
 namespace Meeting2.LearnOop
 {
@@ -10,7 +11,8 @@ namespace Meeting2.LearnOop
 
             Console.WriteLine($"Current speed: {primitiveVehicle.IncreaseSpeed(10)}");
 
-            Console.WriteLine($"Max weight of vehicle: {Vehicle.GetMaxWeight()}");
+            //Console.WriteLine($"Max weight of vehicle: {Vehicle.GetMaxWeight()}");
+
             TraineeReferenceType trainee = new TraineeReferenceType("Bill", 2);
             trainee.ChangeAssesment(5);
 

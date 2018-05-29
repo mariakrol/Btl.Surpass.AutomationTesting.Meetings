@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Meeting2.LearnOop
+namespace Meeting2.LearnOop.InheritanceSamples
 {
     internal abstract class Vehicle
     {

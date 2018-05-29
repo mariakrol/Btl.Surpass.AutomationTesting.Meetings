@@ -58,9 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="A_Oop.cs" />
-    <Compile Include="Bicycle.cs" />
+    <Compile Include="InheritanceSamples\Bicycle.cs" />
     <Compile Include="B_Encapsulation.cs" />
     <Compile Include="CarWash.cs" />
+    <Compile Include="C_ Inheritance.cs" />
     <Compile Include="EncapsulationSamples\DeliveryService.cs" />
     <Compile Include="OopSamples\FilledColoredGiftBox.cs" />
     <Compile Include="OopSamples\FilledGiftBox.cs" />
@@ -68,12 +69,12 @@
     <Compile Include="CompanyVehicle.cs" />
     <Compile Include="OopSamples\EmptyGiftBox.cs" />
     <Compile Include="IAsset.cs" />
-    <Compile Include="MotorVehicle.cs" />
+    <Compile Include="InheritanceSamples\MotorVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vehicle.cs" />
-    <Compile Include="Wheel.cs" />
     <Compile Include="OopSamples\TreineeExtensions.cs" />
+    <Compile Include="InheritanceSamples\Vehicle.cs" />
+    <Compile Include="InheritanceSamples\Wheel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,4 +1,4 @@
-﻿namespace Meeting2.LearnOop
+﻿namespace Meeting2.LearnOop.InheritanceSamples
 {
     internal class MotorVehicle : Vehicle
     {

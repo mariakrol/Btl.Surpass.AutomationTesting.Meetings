@@ -1,5 +1,7 @@
 ﻿using System;
 using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
+using Meeting2.LearnOop.InheritanceSamples;
+using Meeting2.LearnOop.OopSamples;
 
 namespace Meeting2.LearnOop
 {

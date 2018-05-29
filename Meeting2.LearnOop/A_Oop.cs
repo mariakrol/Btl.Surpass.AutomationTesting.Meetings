@@ -1,10 +1,14 @@
-﻿using FluentAssertions;
+﻿using System.Diagnostics;
+using FluentAssertions;
 using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
 using Meeting2.LearnOop.ClassesWithConstructors;
 using NUnit.Framework;
 
 namespace Meeting2.LearnOop
 {
+    // internal access modifier on the class means, that access is limited to the current assembly.
+    // That's why, if any third-party assembly import this, it would have no access to this class.
+
     [TestFixture]
     // ReSharper disable once InconsistentNaming
     internal static class A_Oop
@@ -14,8 +18,10 @@ namespace Meeting2.LearnOop
         /// A class may be composed of any number of members (such as constructors, properties, methods, and events)
         /// and data points (fields). It is something like "prototype" of an object.
         /// 
-        /// An instance of a class - it is an object. Multiple objects can be created based on one class. 
+        /// An instance of a class - it is an object. Multiple objects can be created based on one class.
         /// </summary>
+        /// 
+        /// public access modifier on the method means, that all 
         [Test]
         public static void A_CreateSeveralInstancesOfClass()
         {
@@ -82,6 +88,55 @@ namespace Meeting2.LearnOop
                 .Color
                 .Should()
                 .Be(boxColor);
+        }
+
+        /// <summary>
+        /// Methods of instance level (not marked as static) are available for instances of a class.
+        /// Methods can use data, which is passed by parameters, or they can use object itself (its fields and properties).
+        /// </summary>
+        [Test]
+        public static void C_ObjectGotInstanceLevelMethodsFromClass()
+        {
+            var giftBox = new FilledColoredGiftBox("Novel", "White");
+
+            // This method inly use value of passed argument - name.
+            giftBox.PlaySong("Helen");
+
+            // This method use data of the gift itself
+            giftBox.PrintCongratulation();
+        }
+
+        /// <summary>
+        /// Methods of class level (marked as static) are NOT available for instances of a class.
+        /// They only could be called through class name.
+        /// Such methods can use data, which is passed by parameters, or they can use class-level data (static fields or static properties).
+        /// </summary>
+        [Test]
+        public static void D_ClassHasClassLevelMethods()
+        {
+            // Assume, our gifts could be delivered by single service
+            Trace.TraceInformation($"Gifts delivery service: {FilledColoredGiftBox.GetDeliveryServiceName()}");
+
+            FilledColoredGiftBox.ChangeDeliveryServiceName("Amazon");
+            Trace.TraceInformation($"New gifts delivery service: {FilledColoredGiftBox.GetDeliveryServiceName()}");
+
+            // if you uncomment following code, you get an error: 'CS0176  Member cannot be accessed with an instance reference; qualify it with a type name instead'
+            // var gift = new FilledColoredGiftBox("Detective story", "Blue");
+            // gift.GetDeliveryServiceName();
+        }
+
+        /// <summary>
+        /// Extension methods enable you to "add" methods to existing types without creating a new derived type,
+        /// recompiling, or otherwise modifying the original type.
+        /// Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type.
+        /// For client code written in C# there is no apparent difference between calling an extension method and the methods that are actually defined in a type.
+        /// </summary>
+        [Test]
+        public static void E_ClassExtendedByThirdpartyMethod()
+        {
+            var trainee = new TraineeReferenceType("Berta", 43);
+
+            trainee.ChangeAssesment(31);
         }
     }
 }

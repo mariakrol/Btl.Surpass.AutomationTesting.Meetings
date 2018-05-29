@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Meeting2.LearnOop.CompositionSamples.Tractor">
+    <Position X="2.5" Y="1" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Meeting2.LearnOop.CompositionSamples.Tractor.LoadingCrane">
+        <TypeIdentifier>
+          <NewMemberFileName>CompositionSamples\Tractor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABEAAACAAAAAAgAAAAQAAAEAAAAAAA=</HashCode>
+      <FileName>CompositionSamples\Tractor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meeting2.LearnOop.CompositionSamples.Wheel">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompositionSamples\Wheel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

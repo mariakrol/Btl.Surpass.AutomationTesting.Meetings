@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Meeting2.LearnOop.ClassesWithConstructorsAndMethods
+namespace Meeting2.LearnOop.OopSamples
 {
     internal class FilledColoredGiftBox
     {

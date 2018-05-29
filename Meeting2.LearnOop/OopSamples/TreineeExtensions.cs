@@ -1,6 +1,6 @@
 ﻿using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
 
-namespace Meeting2.LearnOop
+namespace Meeting2.LearnOop.OopSamples
 {
     internal static class TreineeExtensions
     {

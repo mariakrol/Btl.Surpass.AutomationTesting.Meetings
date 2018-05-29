@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using FluentAssertions;
 using Meeting1.LearnBasicDataTypesAndConstructions.ReferenceAndValueTypes;
-using Meeting2.LearnOop.ClassesWithConstructorsAndMethods;
+using Meeting2.LearnOop.OopSamples;
 using NUnit.Framework;
 
 namespace Meeting2.LearnOop

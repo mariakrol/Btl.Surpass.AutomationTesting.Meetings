@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Meeting2.LearnOop.InheritanceSamples.Vehicle" Collapsed="true">
+    <Position X="4" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAgAAAACACAAAAAACAAAABAAAgAAAAAA=</HashCode>
+      <FileName>InheritanceSamples\Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meeting2.LearnOop.InheritanceSamples.Bicycle" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>InheritanceSamples\Bicycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meeting2.LearnOop.InheritanceSamples.MotorVehicle" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Meeting2.LearnOop.InheritanceSamples.MotorVehicle.Motor" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InheritanceSamples\MotorVehicle.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAIAAABgAAAAAA=</HashCode>
+      <FileName>InheritanceSamples\MotorVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meeting2.LearnOop.InheritanceSamples.Car" Collapsed="true">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InheritanceSamples\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meeting2.LearnOop.InheritanceSamples.Track" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InheritanceSamples\Track.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

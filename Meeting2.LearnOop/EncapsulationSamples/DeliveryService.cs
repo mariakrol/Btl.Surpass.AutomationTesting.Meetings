@@ -6,7 +6,7 @@ namespace Meeting2.LearnOop.EncapsulationSamples
     {
         public void DeliverGift(SpecialFilledAndDecoratedGiftBox gift)
         {
-            Trace.TraceInformation(gift._boxSideSize > 5
+            Trace.TraceInformation(gift.BoxSideSize > 5
                 ? "Deliver by courier"
                 : "Put in the post box and send the code");
         }

@@ -6,11 +6,11 @@ namespace Meeting2.LearnOop.EncapsulationSamples
     {
         public SpecialFilledAndDecoratedGiftBox(int boxSideSize, string boxColor)
         {
-            _boxSideSize = boxSideSize;
+            BoxSideSize = boxSideSize;
             Color = boxColor;
         }
 
-        public readonly int _boxSideSize;
+        public readonly int BoxSideSize;
 
         private object _gift;
 
@@ -40,6 +40,6 @@ namespace Meeting2.LearnOop.EncapsulationSamples
             _gift = gift ?? throw new Exception("Impossible to pack nothing!");
         }
 
-        public override string ToString() => $"Gift with {_gift}, packed to the box with side {_boxSideSize} inch of {Color} color.";
+        public override string ToString() => $"Gift with {_gift}, packed to the box with side {BoxSideSize} inch of {Color} color.";
     }
 }

@@ -58,26 +58,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="A_Oop.cs" />
-    <Compile Include="InheritanceSamples\Bicycle.cs" />
+    <Compile Include="CompositionSamples\Tractor.cs" />
+    <Compile Include="D_Composition.cs" />
+    <Compile Include="E_Polymorphism.cs" />
+    <Compile Include="InheritanceSamples\MultyInheritedVehicles\Asset.cs" />
+    <Compile Include="InheritanceSamples\Vehicles\Bicycle.cs" />
     <Compile Include="B_Encapsulation.cs" />
-    <Compile Include="CarWash.cs" />
+    <Compile Include="PolymorphismSamples\CarWash.cs" />
     <Compile Include="C_ Inheritance.cs" />
     <Compile Include="EncapsulationSamples\DeliveryService.cs" />
+    <Compile Include="InheritanceSamples\Vehicles\BicycleExtensions.cs" />
+    <Compile Include="InheritanceSamples\Vehicles\Car.cs" />
+    <Compile Include="InheritanceSamples\MultyInheritedVehicles\IInsured.cs" />
+    <Compile Include="InheritanceSamples\Vehicles\Track.cs" />
     <Compile Include="OopSamples\FilledColoredGiftBox.cs" />
     <Compile Include="OopSamples\FilledGiftBox.cs" />
     <Compile Include="EncapsulationSamples\SpecialFilledAndDecoratedGiftBox.cs" />
-    <Compile Include="InheritanceSamples\CompanyVehicle.cs" />
+    <Compile Include="InheritanceSamples\MultyInheritedVehicles\CompanyVehicle.cs" />
     <Compile Include="OopSamples\EmptyGiftBox.cs" />
-    <Compile Include="InheritanceSamples\IAsset.cs" />
-    <Compile Include="InheritanceSamples\MotorVehicle.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="InheritanceSamples\MultyInheritedVehicles\IAsset.cs" />
+    <Compile Include="InheritanceSamples\Vehicles\MotorVehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OopSamples\TreineeExtensions.cs" />
-    <Compile Include="InheritanceSamples\Vehicle.cs" />
-    <Compile Include="InheritanceSamples\Wheel.cs" />
+    <Compile Include="InheritanceSamples\Vehicles\Vehicle.cs" />
+    <Compile Include="CompositionSamples\Wheel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CompositionSamples\VehiclePartsCompositionDiagramm.cd" />
+    <None Include="InheritanceSamples\MultipleInheritanceDiagramm.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +94,9 @@
       <Project>{b5c5a484-e3e1-4e96-bf3c-8caafc46d80b}</Project>
       <Name>Meeting1.LearnBasicDataTypesAndConstructions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InheritanceSamples\VehicleInheritanceDiagramm.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

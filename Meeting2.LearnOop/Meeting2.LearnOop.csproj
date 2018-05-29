@@ -66,9 +66,9 @@
     <Compile Include="OopSamples\FilledColoredGiftBox.cs" />
     <Compile Include="OopSamples\FilledGiftBox.cs" />
     <Compile Include="EncapsulationSamples\SpecialFilledAndDecoratedGiftBox.cs" />
-    <Compile Include="CompanyVehicle.cs" />
+    <Compile Include="InheritanceSamples\CompanyVehicle.cs" />
     <Compile Include="OopSamples\EmptyGiftBox.cs" />
-    <Compile Include="IAsset.cs" />
+    <Compile Include="InheritanceSamples\IAsset.cs" />
     <Compile Include="InheritanceSamples\MotorVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

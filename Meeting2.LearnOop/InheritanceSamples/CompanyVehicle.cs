@@ -1,6 +1,4 @@
-﻿using Meeting2.LearnOop.InheritanceSamples;
-
-namespace Meeting2.LearnOop
+﻿namespace Meeting2.LearnOop.InheritanceSamples
 {
     internal class CompanyVehicle : Vehicle, IAsset
     {

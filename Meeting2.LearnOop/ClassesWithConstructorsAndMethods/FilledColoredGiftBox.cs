@@ -1,14 +1,14 @@
 using System.Diagnostics;
 
-namespace Meeting2.LearnOop.ClassesWithConstructors
+namespace Meeting2.LearnOop.ClassesWithConstructorsAndMethods
 {
     internal class FilledColoredGiftBox
     {
-        private static string DeliveryService;
+        private static string _deliveryService;
 
         static FilledColoredGiftBox()
         {
-            DeliveryService = "DHL";
+            _deliveryService = "DHL";
         }
 
         private FilledColoredGiftBox(object gift)
@@ -38,8 +38,8 @@ namespace Meeting2.LearnOop.ClassesWithConstructors
         public void PrintCongratulation()
             => Trace.TraceInformation($"Here is our gift for you, it is the {Gift}, and it is boxed to the {Color} cover. Enjoy and be happy!");
 
-        public static string GetDeliveryServiceName() => DeliveryService;
+        public static string GetDeliveryServiceName() => _deliveryService;
 
-        public static string ChangeDeliveryServiceName(string deliveryServiceName) => DeliveryService = deliveryServiceName;
+        public static string ChangeDeliveryServiceName(string deliveryServiceName) => _deliveryService = deliveryServiceName;
     }
 }

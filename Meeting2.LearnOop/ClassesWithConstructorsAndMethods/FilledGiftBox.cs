@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Meeting2.LearnOop.ClassesWithConstructors
+namespace Meeting2.LearnOop.ClassesWithConstructorsAndMethods
 {
     internal class FilledGiftBox
     {

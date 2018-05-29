@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Meeting1.LearnBasicDataTypesAndConstructions\Meeting1.LearnBasicDataTypesAndConstructions.csproj">
+      <Project>{b5c5a484-e3e1-4e96-bf3c-8caafc46d80b}</Project>
+      <Name>Meeting1.LearnBasicDataTypesAndConstructions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

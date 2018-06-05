@@ -49,9 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumericField.cs" />
-    <Compile Include="PageWithFieldModel.cs" />
+    <Compile Include="Convertor.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="DriversStaff.cs" />
+    <Compile Include="VehicleParts\AutomaticTransmission.cs" />
+    <Compile Include="VehicleParts\DieselEngine.cs" />
+    <Compile Include="VehicleParts\Engine.cs" />
+    <Compile Include="VehicleParts\GasEngine.cs" />
+    <Compile Include="Validation\NumericField.cs" />
+    <Compile Include="Validation\PageWithFieldModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleParts\ITransmission.cs" />
+    <Compile Include="VehicleParts\ManualTransmission.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

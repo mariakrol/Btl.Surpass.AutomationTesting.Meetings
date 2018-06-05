@@ -1,4 +1,4 @@
-﻿namespace Meeting3.AdvancedProgrammingPart1
+﻿namespace Meeting3.AdvancedProgrammingPart1.Validation
 {
     internal class PageWithFieldModel
     {

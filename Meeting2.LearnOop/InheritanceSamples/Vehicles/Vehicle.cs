@@ -7,6 +7,7 @@
             _speed = speed;
         }
 
+        // ReSharper disable once NotAccessedField.Local
         private int _speed;
 
         public string Color { get; set; }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting1.LearnBasicDataType
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting2.LearnOop", "Meeting2.LearnOop\Meeting2.LearnOop.csproj", "{3498EE67-E5EC-4B08-8DFC-B881D0929A85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting3.AdvancedProgrammingPart1", "Meeting3.AdvancedProgrammingPart1\Meeting3.AdvancedProgrammingPart1.csproj", "{87360405-5C94-44C0-9A13-7C81BF475097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3498EE67-E5EC-4B08-8DFC-B881D0929A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3498EE67-E5EC-4B08-8DFC-B881D0929A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3498EE67-E5EC-4B08-8DFC-B881D0929A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87360405-5C94-44C0-9A13-7C81BF475097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87360405-5C94-44C0-9A13-7C81BF475097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87360405-5C94-44C0-9A13-7C81BF475097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87360405-5C94-44C0-9A13-7C81BF475097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

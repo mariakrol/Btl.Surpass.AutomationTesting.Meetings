@@ -1,4 +1,4 @@
-﻿namespace Meeting3.AdvancedProgrammingPart1
+﻿namespace Meeting3.AdvancedProgrammingPart1.ValidationWithEither
 {
     internal class Either<TErrorType, TValueType>
     {

@@ -1,4 +1,4 @@
-﻿namespace Meeting3.AdvancedProgrammingPart1.Validation
+﻿namespace Meeting3.AdvancedProgrammingPart1.ValidationWithEither
 {
     internal class NumericField
     {
@@ -10,22 +10,22 @@
 
         private int MinValue { get; }
 
-        private int MaxValue { get;}
+        private int MaxValue { get; }
 
-        private string Text { get; set; }
+        public int Text { get; set; }
 
         private string ValidationMessage { get; set; }
 
         public void Fill(int value)
         {
-            Text = string.Empty;
+            Text = 0;
 
             bool isValueValid = Validate(value, out string message);
             ValidationMessage = message;
 
             if (isValueValid)
             {
-                Text = value.ToString();
+                Text = value;
             }
         }
 

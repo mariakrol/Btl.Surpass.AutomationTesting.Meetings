@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using Meeting3.AdvancedProgrammingPart1.Validation;
+using Meeting3.AdvancedProgrammingPart1.ValidationWithEither;
 using NUnit.Framework;
 
 namespace Meeting3.AdvancedProgrammingPart1
@@ -30,7 +30,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         }
 
         [Test]
-        public static void A_GetValueFromEither()
+        public static void B_GetValueFromEither()
         {
             var expectedValue = 17;
             var fieldValueOrError = PageWithField.FillField(expectedValue);

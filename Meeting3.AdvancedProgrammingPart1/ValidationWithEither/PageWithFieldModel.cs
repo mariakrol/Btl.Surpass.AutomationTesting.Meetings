@@ -1,4 +1,4 @@
-﻿namespace Meeting3.AdvancedProgrammingPart1.Validation
+﻿namespace Meeting3.AdvancedProgrammingPart1.ValidationWithEither
 {
     internal class PageWithFieldModel
     {

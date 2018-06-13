@@ -5,11 +5,20 @@
         public PageWithFieldModel()
         {
             FieldFrom15To20 = new NumericField(15, 20);
-            FieldFrom1To10 = new NumericField(1, 10);
+        }
+
+        public Either<string, int> FillField(int value)
+        {
+            FieldFrom15To20.Fill(value);
+
+            if (!string.IsNullOrEmpty(FieldFrom15To20.GetValidationMessage()))
+            {
+                return new Either<string, int> (FieldFrom15To20.GetValidationMessage());
+            }
+
+            return new Either<string, int> (FieldFrom15To20.Text);
         }
 
         private NumericField FieldFrom15To20 { get; }
-
-        private NumericField FieldFrom1To10 { get; }
     }
 }

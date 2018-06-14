@@ -1,6 +1,6 @@
 ﻿using Meeting3.AdvancedProgrammingPart1.VehicleParts;
 
-namespace Meeting3.AdvancedProgrammingPart1
+namespace Meeting3.AdvancedProgrammingPart1.ErrorWithException
 {
     internal class Driver
     {
@@ -10,8 +10,8 @@ namespace Meeting3.AdvancedProgrammingPart1
             UsedTransmission = usedTransmission;
         }
 
-        public int Id { get; set; }
+        public int Id { get; }
         
-        public ITransmission UsedTransmission { get; set; }
+        public ITransmission UsedTransmission { get; }
     }
 }

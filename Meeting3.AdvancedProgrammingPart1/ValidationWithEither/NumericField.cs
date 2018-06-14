@@ -12,7 +12,7 @@
 
         private int MaxValue { get; }
 
-        public int Text { get; set; }
+        public int Text { get; private set; }
 
         private string ValidationMessage { get; set; }
 

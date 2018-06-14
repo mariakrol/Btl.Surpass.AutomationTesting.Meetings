@@ -1,7 +1,7 @@
 ﻿using System;
 using Meeting3.AdvancedProgrammingPart1.VehicleParts;
 
-namespace Meeting3.AdvancedProgrammingPart1
+namespace Meeting3.AdvancedProgrammingPart1.ErrorWithException
 {
     internal class DriversStaff
     {
@@ -15,7 +15,7 @@ namespace Meeting3.AdvancedProgrammingPart1
                 }
             }
 
-            //error?
+            throw new ArgumentException("Driver not found");
         }
 
         private readonly Driver[] _drivers = {

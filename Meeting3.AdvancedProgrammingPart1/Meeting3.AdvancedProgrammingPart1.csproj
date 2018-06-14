@@ -49,12 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="B_Exceptions.cs" />
     <Compile Include="A_Either.cs" />
     <Compile Include="Convertor.cs" />
-    <Compile Include="Driver.cs" />
-    <Compile Include="DriversStaff.cs" />
+    <Compile Include="ErrorWithException\Driver.cs" />
+    <Compile Include="ErrorWithException\DriverAssignException.cs" />
+    <Compile Include="ErrorWithException\DriversStaff.cs" />
     <Compile Include="ValidationWithEither\Either.cs" />
-    <Compile Include="Garage.cs" />
+    <Compile Include="ErrorWithException\Garage.cs" />
     <Compile Include="VehicleParts\AutomaticTransmission.cs" />
     <Compile Include="VehicleParts\DieselEngine.cs" />
     <Compile Include="VehicleParts\Engine.cs" />

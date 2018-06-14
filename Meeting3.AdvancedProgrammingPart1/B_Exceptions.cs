@@ -58,15 +58,19 @@ namespace Meeting3.AdvancedProgrammingPart1
         [Test]
         public static void C_FinallyCalledIfNoExceptionOccurs()
         {
-            var debugVariable = "will be overwritten in finally";
+            string debugVariable;
             
             try
             {
                 Garage.Staff.GetDriver(3);
+                // ReSharper disable once RedundantAssignment
+                // this assignment is added just to show, that we overwrite it
+                // by assignment in the finally block anyway.
                 debugVariable = StringFromTry;
             }
             catch (ArgumentException)
             {
+                // ReSharper disable once RedundantAssignment
                 debugVariable = StringFromCatch;
             }
             finally
@@ -82,7 +86,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         [TestCase(ExpectedResult = StringFromFinally)]
         public static string D_FinallyCalledIfNoExceptionOccursAndValueReturned()
         {
-            var debugVariable = "will be overwritten in finally";
+            string debugVariable;
 
             try
             {
@@ -93,6 +97,7 @@ namespace Meeting3.AdvancedProgrammingPart1
             }
             catch (ArgumentException)
             {
+                // ReSharper disable once RedundantAssignment
                 debugVariable = StringFromCatch;
             }
             finally
@@ -106,15 +111,17 @@ namespace Meeting3.AdvancedProgrammingPart1
         [Test]
         public static void E_FinallyCalledIfExceptionOccurs()
         {
-            var debugVariable = "will be overwritten in finally";
+            string debugVariable;
 
             try
             {
                 Garage.Staff.GetDriver(3000);
+                // ReSharper disable once RedundantAssignment
                 debugVariable = StringFromTry;
             }
             catch (ArgumentException)
             {
+                // ReSharper disable once RedundantAssignment
                 debugVariable = StringFromCatch;
             }
             finally

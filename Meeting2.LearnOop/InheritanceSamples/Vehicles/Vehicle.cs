@@ -1,6 +1,6 @@
 ﻿namespace Meeting2.LearnOop.InheritanceSamples.Vehicles
 {
-    internal abstract class Vehicle
+    public abstract class Vehicle
     {
         protected Vehicle(int speed)
         {

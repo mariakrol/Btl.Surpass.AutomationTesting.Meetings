@@ -51,25 +51,34 @@
   <ItemGroup>
     <Compile Include="B_Exceptions.cs" />
     <Compile Include="A_Either.cs" />
-    <Compile Include="Convertor.cs" />
     <Compile Include="ErrorWithException\Driver.cs" />
     <Compile Include="ErrorWithException\DriverAssignException.cs" />
     <Compile Include="ErrorWithException\DriversStaff.cs" />
     <Compile Include="ValidationWithEither\Either.cs" />
     <Compile Include="ErrorWithException\Garage.cs" />
-    <Compile Include="VehicleParts\AutomaticTransmission.cs" />
-    <Compile Include="VehicleParts\DieselEngine.cs" />
-    <Compile Include="VehicleParts\Engine.cs" />
-    <Compile Include="VehicleParts\GasEngine.cs" />
+    <Compile Include="GenericVehicle\EquippedVehicle[TTransmission, TEngine].cs" />
+    <Compile Include="GenericVehicle\Sedan.cs" />
+    <Compile Include="C_GenericClasses.cs" />
+    <Compile Include="GenericVehicle\AutomaticTransmission.cs" />
+    <Compile Include="GenericVehicle\DieselEngine.cs" />
+    <Compile Include="GenericVehicle\Engine.cs" />
+    <Compile Include="GenericVehicle\EquippedVehicle[TTransmission].cs" />
+    <Compile Include="GenericVehicle\GasEngine.cs" />
     <Compile Include="ValidationWithEither\NumericField.cs" />
     <Compile Include="ValidationWithEither\PageWithFieldModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VehicleParts\ITransmission.cs" />
-    <Compile Include="VehicleParts\ManualTransmission.cs" />
+    <Compile Include="GenericVehicle\ITransmission.cs" />
+    <Compile Include="GenericVehicle\ManualTransmission.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Meeting2.LearnOop\Meeting2.LearnOop.csproj">
+      <Project>{3498ee67-e5ec-4b08-8dfc-b881d0929a85}</Project>
+      <Name>Meeting2.LearnOop</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

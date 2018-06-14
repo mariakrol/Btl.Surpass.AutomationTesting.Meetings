@@ -1,7 +1,7 @@
 ﻿using System;
 using FluentAssertions;
 using Meeting3.AdvancedProgrammingPart1.ErrorWithException;
-using Meeting3.AdvancedProgrammingPart1.VehicleParts;
+using Meeting3.AdvancedProgrammingPart1.GenericVehicle;
 using NUnit.Framework;
 
 namespace Meeting3.AdvancedProgrammingPart1

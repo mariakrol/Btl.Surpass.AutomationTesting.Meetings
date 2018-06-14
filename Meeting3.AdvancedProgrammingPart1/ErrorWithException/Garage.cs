@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Meeting3.AdvancedProgrammingPart1.VehicleParts;
+using Meeting3.AdvancedProgrammingPart1.GenericVehicle;
 
 namespace Meeting3.AdvancedProgrammingPart1.ErrorWithException
 {

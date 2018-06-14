@@ -6,10 +6,10 @@ namespace Meeting3.AdvancedProgrammingPart1
 {
     [TestFixture]
     // ReSharper disable once InconsistentNaming
-    internal class C_GenericClasses
+    internal static class C_GenericClasses
     {
         [Test]
-        public void A_ConstructСlosedTypesBasedOnGenericWithOneParameter()
+        public static void A_ConstructСlosedTypesBasedOnGenericWithOneParameter()
         {
             var vehicleWithAutomaticTransmission = new EquippedVehicle<AutomaticTransmission>(200);
             var vehicleWithManualTransmission = new EquippedVehicle<AutomaticTransmission>(240);
@@ -22,7 +22,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         }
 
         [Test]
-        public void A_ConstructСlosedTypesBasedOnGenericWithSeveralParameters()
+        public static void A_ConstructСlosedTypesBasedOnGenericWithSeveralParameters()
         {
             var vehicleWithAutomaticTransmission = new EquippedVehicle<AutomaticTransmission, GasEngine>(200);
             var vehicleWithManualTransmission = new EquippedVehicle<AutomaticTransmission, DieselEngine>(240);
@@ -35,7 +35,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         }
 
         [Test]
-        public void A_ConstructСlosedTypesBasedOnDerivedGenericClass()
+        public static void A_ConstructСlosedTypesBasedOnDerivedGenericClass()
         {
             var sedanWithAutomaticTransmission = new Sedan<AutomaticTransmission>(200);
             var sedanWithManualTransmission = new Sedan<AutomaticTransmission>(240);

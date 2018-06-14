@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="B_Exceptions.cs" />
     <Compile Include="A_Either.cs" />
+    <Compile Include="D_GenericMembers.cs" />
+    <Compile Include="Swapper.cs" />
     <Compile Include="ErrorWithException\Driver.cs" />
     <Compile Include="ErrorWithException\DriverAssignException.cs" />
     <Compile Include="ErrorWithException\DriversStaff.cs" />

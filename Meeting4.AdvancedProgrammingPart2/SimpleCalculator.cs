@@ -1,4 +1,4 @@
-﻿namespace Meeting3.AdvancedProgrammingPart2
+﻿namespace Meeting4.AdvancedProgrammingPart2
 {
     internal static class SimpleCalculator
     {

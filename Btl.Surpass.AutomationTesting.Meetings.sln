@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting2.LearnOop", "Meetin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting3.AdvancedProgrammingPart1", "Meeting3.AdvancedProgrammingPart1\Meeting3.AdvancedProgrammingPart1.csproj", "{87360405-5C94-44C0-9A13-7C81BF475097}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting3.AdvancedProgrammingPart2", "Meeting3.AdvancedProgrammingPart2\Meeting3.AdvancedProgrammingPart2.csproj", "{88625882-BFC3-460F-96B3-6551F5AFFD00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting4.AdvancedProgrammingPart2", "Meeting4.AdvancedProgrammingPart2\Meeting4.AdvancedProgrammingPart2.csproj", "{88625882-BFC3-460F-96B3-6551F5AFFD00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

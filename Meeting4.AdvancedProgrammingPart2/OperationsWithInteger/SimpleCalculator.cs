@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Meeting4.AdvancedProgrammingPart2
+namespace Meeting4.AdvancedProgrammingPart2.OperationsWithInteger
 {
     internal static class SimpleCalculator
     {

@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics;
-using Meeting4.AdvancedProgrammingPart2.BuildinDelegatesSamples;
+using Meeting4.AdvancedProgrammingPart2.BuiltinDelegatesSamples;
 
 namespace Meeting4.AdvancedProgrammingPart2.CovarianceContravariance
 {
-    public class UserHandler
+    public static class UserHandler
     {
         public static Name PrintName(Name userInfo)
         {

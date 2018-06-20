@@ -20,7 +20,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         }
 
         [Test]
-        public static void A_MethodWithGenericClassParameter()
+        public static void B_MethodWithGenericClassParameter()
         {
             var expectedTransmission = new AutomaticTransmission();
             var sedanWithAutomaticTransmission = new Sedan<AutomaticTransmission>(200);
@@ -32,7 +32,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         }
 
         [Test]
-        public static void A_MethodWithGenericParameter()
+        public static void C_MethodWithGenericParameter()
         {
             int left = 5;
             int leftCopy = left;

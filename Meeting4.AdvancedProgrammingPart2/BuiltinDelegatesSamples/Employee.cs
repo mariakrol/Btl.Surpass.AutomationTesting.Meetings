@@ -1,4 +1,4 @@
-﻿namespace Meeting4.AdvancedProgrammingPart2.BuildinDelegatesSamples
+﻿namespace Meeting4.AdvancedProgrammingPart2.BuiltinDelegatesSamples
 {
     public class Employee
     {

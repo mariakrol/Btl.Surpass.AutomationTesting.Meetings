@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Meeting4.AdvancedProgrammingPart2.BuildinDelegatesSamples
+namespace Meeting4.AdvancedProgrammingPart2.BuiltinDelegatesSamples
 {
     public static class Clock
     {

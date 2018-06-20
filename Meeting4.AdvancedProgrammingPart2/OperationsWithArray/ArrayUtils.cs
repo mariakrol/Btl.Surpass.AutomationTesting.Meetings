@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Meeting4.AdvancedProgrammingPart2.OperationsWithArray
 {
-    internal static class ArrayEvaluator
+    internal static class ArrayUtils
     {
         public static void PrintArray(int[] array)
         {

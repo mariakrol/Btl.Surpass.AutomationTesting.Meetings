@@ -20,11 +20,11 @@ namespace Meeting3.AdvancedProgrammingPart1
         {
             var fieldValueOrError = PageWithField.FillField(100);
 
-            fieldValueOrError.Left
+            fieldValueOrError.Error
                 .Should()
                 .NotBeNullOrEmpty("because an error expected");
 
-            fieldValueOrError.Right
+            fieldValueOrError.Result
                 .Should()
                 .Be(default(int), "because is a error filled, value cannot be filled");
         }
@@ -35,11 +35,11 @@ namespace Meeting3.AdvancedProgrammingPart1
             var expectedValue = 17;
             var fieldValueOrError = PageWithField.FillField(expectedValue);
 
-            fieldValueOrError.Left
+            fieldValueOrError.Error
                 .Should()
                 .BeNullOrEmpty("because successful fill is expected");
 
-            fieldValueOrError.Right
+            fieldValueOrError.Result
                 .Should()
                 .Be(expectedValue, "because value expected to be valid");
         }

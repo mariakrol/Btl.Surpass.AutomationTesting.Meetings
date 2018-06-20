@@ -8,7 +8,7 @@ namespace Meeting4.AdvancedProgrammingPart2
     internal static class B_Functions
     {
         [Test]
-        public static void A_CallAnonimousMethod()
+        public static void A_CallAnonymousMethod()
         {
             // ReSharper disable once ConvertToLocalFunction
             Sum getSumOfIntegers = delegate(int[] numbers)

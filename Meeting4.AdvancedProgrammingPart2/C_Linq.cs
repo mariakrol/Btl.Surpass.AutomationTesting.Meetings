@@ -39,10 +39,10 @@ namespace Meeting4.AdvancedProgrammingPart2
                 select $"{name} came from {fullName}";
 
             var methodsChain = fullNames
-                .SelectMany(fullName => fullName.Split().Select(name => new { name, fullName }))
-                .OrderBy(nameInfo => nameInfo.fullName)
-                .ThenBy(nameInfo => nameInfo.name)
-                .Select(nameInfo => $"{nameInfo.name} came from {nameInfo.fullName}");
+                .SelectMany(fullName => fullName.Split().Select(name => new { Name = name, FullName = fullName }))
+                .OrderBy(nameInfo => nameInfo.FullName)
+                .ThenBy(nameInfo => nameInfo.Name)
+                .Select(nameInfo => $"{nameInfo.Name} came from {nameInfo.FullName}");
 
             linqQuery
                 .Should()
@@ -63,9 +63,9 @@ namespace Meeting4.AdvancedProgrammingPart2
                 let totalSpend = customer.Purchases.Sum(p => p.Price)    // Method syntax here
                 where totalSpend > 1000
                 from purchase in customer.Purchases
-                select new { purchase.Description, totalSpend, customer.Address };
+                select new { purchase.Description, TotalSpend = totalSpend, customer.Address };
 
-            Trace.TraceInformation(string.Join("; ", customerPurchasesInformation.Select(purchase => $"{purchase.Description}, {purchase.totalSpend}")));
+            Trace.TraceInformation(string.Join("; ", customerPurchasesInformation.Select(purchase => $"{purchase.Description}, {purchase.TotalSpend}")));
         }
     }
 }

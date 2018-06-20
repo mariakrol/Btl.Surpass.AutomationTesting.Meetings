@@ -4,16 +4,16 @@
     {
         public Either(TErrorType error)
         {
-            Left = error;
+            Error = error;
         }
 
         public Either(TValueType value)
         {
-            Right = value;
+            Result = value;
         }
 
-        public TErrorType Left { get; }
+        public TErrorType Error { get; }
 
-        public TValueType Right { get; }
+        public TValueType Result { get; }
     }
 }

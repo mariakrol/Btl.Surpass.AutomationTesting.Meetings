@@ -12,7 +12,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         public static void A_ConstructСlosedTypesBasedOnGenericWithOneParameter()
         {
             var vehicleWithAutomaticTransmission = new EquippedVehicle<AutomaticTransmission>(200);
-            var vehicleWithManualTransmission = new EquippedVehicle<AutomaticTransmission>(240);
+            var vehicleWithManualTransmission = new EquippedVehicle<ManualTransmission>(240);
 
             vehicleWithManualTransmission.GetType()
                 .BaseType
@@ -25,7 +25,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         public static void A_ConstructСlosedTypesBasedOnGenericWithSeveralParameters()
         {
             var vehicleWithAutomaticTransmission = new EquippedVehicle<AutomaticTransmission, GasEngine>(200);
-            var vehicleWithManualTransmission = new EquippedVehicle<AutomaticTransmission, DieselEngine>(240);
+            var vehicleWithManualTransmission = new EquippedVehicle<ManualTransmission, DieselEngine>(240);
 
             vehicleWithManualTransmission.GetType()
                 .BaseType
@@ -38,7 +38,7 @@ namespace Meeting3.AdvancedProgrammingPart1
         public static void A_ConstructСlosedTypesBasedOnDerivedGenericClass()
         {
             var sedanWithAutomaticTransmission = new Sedan<AutomaticTransmission>(200);
-            var sedanWithManualTransmission = new Sedan<AutomaticTransmission>(240);
+            var sedanWithManualTransmission = new Sedan<ManualTransmission>(240);
 
             sedanWithManualTransmission.GetType()
                 .BaseType

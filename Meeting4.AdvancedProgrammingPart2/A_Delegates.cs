@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using FluentAssertions;
-using Meeting4.AdvancedProgrammingPart2.BuildinDelegatesSamples;
+using Meeting4.AdvancedProgrammingPart2.BuiltinDelegatesSamples;
 using Meeting4.AdvancedProgrammingPart2.CovarianceContravariance;
 using Meeting4.AdvancedProgrammingPart2.OperationsWithArray;
 using Meeting4.AdvancedProgrammingPart2.OperationsWithInteger;
@@ -13,13 +13,6 @@ namespace Meeting4.AdvancedProgrammingPart2
     // ReSharper disable once InconsistentNaming
     internal static class A_Delegates
     {
-        /// <summary>
-        /// The main thing, you can see in the sample: when we call an instance of delegate IntOperation, a method
-        /// which is referenced by this delegate is called. 
-        /// That's why, the call of a method is checked at runtime, not at compile time.
-        /// </summary>
-        /// <param name="i"></param>
-        /// <param name="j"></param>
         [TestCase(5, 10)]
         public static void A_DelegateContainReferenceOnMethod(int i, int j)
         {
@@ -46,11 +39,11 @@ namespace Meeting4.AdvancedProgrammingPart2
         {
             int[] myArr = {2, -4, 10, 5, -6, 9};
 
-            ArrayOperation arrayOperation = ArrayEvaluator.PrintArray;
-            arrayOperation += ArrayEvaluator.SortAscending;
-            arrayOperation += ArrayEvaluator.PrintArray;
-            arrayOperation += ArrayEvaluator.SortDescending;
-            arrayOperation += ArrayEvaluator.PrintArray;
+            ArrayOperation arrayOperation = ArrayUtils.PrintArray;
+            arrayOperation += ArrayUtils.SortAscending;
+            arrayOperation += ArrayUtils.PrintArray;
+            arrayOperation += ArrayUtils.SortDescending;
+            arrayOperation += ArrayUtils.PrintArray;
 
             arrayOperation(myArr);
         }
@@ -87,7 +80,7 @@ namespace Meeting4.AdvancedProgrammingPart2
         }
 
         [Test]
-        public static void E_CallBuildinDelegateWithoutParameters()
+        public static void E_CallBuiltinDelegateWithoutParameters()
         {
             Action printTime = Clock.PrintCurrentTime;
 
@@ -95,7 +88,7 @@ namespace Meeting4.AdvancedProgrammingPart2
         }
 
         [Test]
-        public static void F_CallBuildinParametrizedDelegateWithOutputParameter()
+        public static void F_CallBuiltinParametrizedDelegateWithReturnType()
         {
             Func<FullName, int, Employee> createEmployee = UserHandler.CreateEmployee;
 

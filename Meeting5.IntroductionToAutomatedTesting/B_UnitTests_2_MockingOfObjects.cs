@@ -1,4 +1,5 @@
-﻿using Meeting5.IntroductionToAutomatedTesting.LearnUnitTests;
+﻿using FluentAssertions;
+using Meeting5.IntroductionToAutomatedTesting.LearnUnitTests;
 using NUnit.Framework;
 
 namespace Meeting5.IntroductionToAutomatedTesting
@@ -8,7 +9,7 @@ namespace Meeting5.IntroductionToAutomatedTesting
     /// Unit tests should run independent of any outside resources.
     /// Your tests shouldn't depend on a database being present, or a web service being available.
     /// So instead, we simulate these resources, so we can control what they return.
-    /// In our app for example, We can't simulate a rejected credit card on registration.
+    /// In our app for example, we can't simulate a rejected credit card on registration.
     /// The bank probably would not like us submitting thousands of bad credit cards just to make sure our error handling code is correct.
     /// 
     /// The first thing, it would be very nice if we could check to see that if billing failed, the appropriate error message was returned.
@@ -24,32 +25,34 @@ namespace Meeting5.IntroductionToAutomatedTesting
     // ReSharper disable once InconsistentNaming
     public static class B_UnitTests_2_MockingOfObjects
     {
-        private static AccountServices Services { get; set; }
+        private static AccountService Service { get; set; }
 
         [SetUp]
         public static void CreateAccountService()
         {
-            Services = new AccountServices(new FakeBankWebService());
+            Service = new AccountService(new FakeBankWebService());
         }
 
         [Test]
         [TestCase("asdasd")]
         [TestCase("378282246310005")]
-        public static void UserIsNotRegisteredWithInvalidCard(string card)
+        public static void UserWithInvalidCardIsNotRegistered(string card)
         {
-            var registrationResult = Services.RegisterUser("test_username", card);
+            var registrationResult = Service.RegisterUser("test_username", card);
 
-            Assert.AreEqual(AccountServicesResources.CardDeclinedMessage, registrationResult);
+            registrationResult.Should()
+                .Be(AccountServiceResources.CardDeclinedMessage);
         }
 
         [Test]
         [TestCase("asdasd")]
         [TestCase("378282246310005")]
-        public static void UserIsRegisteredWithValidCard(string card)
+        public static void UserWithValidCardIsRegistered(string card)
         {
-            var registrationResult = Services.RegisterUser("test_username", card);
+            var registrationResult = Service.RegisterUser("test_username", card);
 
-            Assert.AreEqual(AccountServicesResources.CardAcceptedMessage, registrationResult);
+            registrationResult.Should()
+                .Be(AccountServiceResources.CardAcceptedMessage);
         }
     }
 }

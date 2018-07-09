@@ -60,8 +60,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LearnUnitTests\AccountServices.cs" />
-    <Compile Include="LearnUnitTests\AccountServicesResources.cs" />
+    <Compile Include="LearnUnitTests\AccountService.cs" />
+    <Compile Include="LearnUnitTests\AccountServiceResources.cs" />
     <Compile Include="A_Attributes.cs" />
     <Compile Include="B_UnitTests_2_MockingOfObjects.cs" />
     <Compile Include="B_UnitTests_1_SimpleNunitAndFluentAssertions.cs" />

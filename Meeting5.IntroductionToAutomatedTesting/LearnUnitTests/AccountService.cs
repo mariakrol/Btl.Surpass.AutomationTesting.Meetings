@@ -1,8 +1,8 @@
 ﻿namespace Meeting5.IntroductionToAutomatedTesting.LearnUnitTests
 {
-    public class AccountServices
+    public class AccountService
     {
-        public AccountServices(IBankWebService webService)
+        public AccountService(IBankWebService webService)
         {
             WebService = webService;
         }
@@ -16,9 +16,9 @@
 
             bool success = WebService.Bill(creditCard);
 
-            return !success
-                ? AccountServicesResources.CardDeclinedMessage
-                : AccountServicesResources.CardAcceptedMessage;
+            return success
+                ? AccountServiceResources.CardAcceptedMessage
+                : AccountServiceResources.CardDeclinedMessage;
         }
 
         // ReSharper disable once UnusedParameter.Local

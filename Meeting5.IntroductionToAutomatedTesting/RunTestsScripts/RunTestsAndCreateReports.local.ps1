@@ -22,8 +22,6 @@ $pathToOutputDirectory = $pathToRootDirectory + "\TestResults\";
 
 $resultName = $testProject + "RegressionResult";
 
-Write-Host "res" $resultName;
-
 If(([string]::IsNullOrEmpty($includedCategories))) {
 	Write-Host "In if";
 	.\RunTestsAndCreateReports.ps1 -pathToPackages $pathToPackages -pathToTestsLibrary $pathToTestsLibrary -pathToOutputDirectory $pathToOutputDirectory -resultName $resultName

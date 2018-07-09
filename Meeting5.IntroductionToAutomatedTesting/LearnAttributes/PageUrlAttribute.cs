@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Meeting5.IntroductionToAutomatedTesting
+namespace Meeting5.IntroductionToAutomatedTesting.LearnAttributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class PageUrlAttribute : Attribute

@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace Meeting5.IntroductionToAutomatedTesting
+namespace Meeting5.IntroductionToAutomatedTesting.LearnAttributes
 {
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
-    public class CssNameAttribute : Attribute
+    public sealed class CssNameAttribute : Attribute
     {
         public CssNameAttribute(string nameAttribute)
         {

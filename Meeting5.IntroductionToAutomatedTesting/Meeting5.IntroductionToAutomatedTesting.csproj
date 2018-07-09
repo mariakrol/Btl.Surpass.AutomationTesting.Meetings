@@ -60,12 +60,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckControlAttribute.cs" />
-    <Compile Include="Logging.cs" />
-    <Compile Include="PageUrlAttribute.cs" />
-    <Compile Include="CssNameAttribute.cs" />
-    <Compile Include="GooglePage.cs" />
+    <Compile Include="LearnUnitTests\AccountServices.cs" />
+    <Compile Include="LearnUnitTests\AccountServicesResources.cs" />
+    <Compile Include="A_Attributes.cs" />
+    <Compile Include="B_UnitTests_2_MockingOfObjects.cs" />
+    <Compile Include="B_UnitTests_1_SimpleNunitAndFluentAssertions.cs" />
+    <Compile Include="LearnUnitTests\FakeBankWebService.cs" />
+    <Compile Include="LearnUnitTests\IBankWebService.cs" />
+    <Compile Include="LearnAttributes\CheckControlAttribute.cs" />
+    <Compile Include="C_Logging.cs" />
+    <Compile Include="LearnAttributes\PageUrlAttribute.cs" />
+    <Compile Include="LearnAttributes\CssNameAttribute.cs" />
+    <Compile Include="LearnAttributes\GooglePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LearnUnitTests\UsPhoneNumberValidator.cs" />
+    <None Include="RunTestsScripts\RunTestsAndCreateReports.local.ps1" />
+    <None Include="RunTestsScripts\RunTestsAndCreateReports.ps1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

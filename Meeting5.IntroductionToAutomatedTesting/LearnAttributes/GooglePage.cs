@@ -1,7 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace Meeting5.IntroductionToAutomatedTesting
+namespace Meeting5.IntroductionToAutomatedTesting.LearnAttributes
 {
     [PageUrl("google.com")]
     internal class GooglePage

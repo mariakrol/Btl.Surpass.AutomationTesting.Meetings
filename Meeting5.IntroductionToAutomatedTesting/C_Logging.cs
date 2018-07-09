@@ -4,9 +4,10 @@ using NUnit.Framework;
 namespace Meeting5.IntroductionToAutomatedTesting
 {
     [TestFixture]
-    internal static class Logging
+    // ReSharper disable once InconsistentNaming
+    internal static class C_Logging
     {
-        private static readonly ILog Log = LogManager.GetLogger("testLogger");
+        private static readonly ILog Log = LogManager.GetLogger(typeof(C_Logging));
 
         [Test]
         public static void A_LogMessages()

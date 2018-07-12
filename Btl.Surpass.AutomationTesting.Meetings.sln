@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting4.AdvancedProgrammin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting5.IntroductionToAutomatedTesting", "Meeting5.IntroductionToAutomatedTesting\Meeting5.IntroductionToAutomatedTesting.csproj", "{009C4913-FF40-4B33-B0B8-8BBCE6DB96BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting6.ExploreE2eTestWithSeleniumWd", "Meeting6.ExploreE2eTestWithSeleniumWd\Meeting6.ExploreE2eTestWithSeleniumWd.csproj", "{A12A96D7-4165-406D-838B-E8767EC6558B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{009C4913-FF40-4B33-B0B8-8BBCE6DB96BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009C4913-FF40-4B33-B0B8-8BBCE6DB96BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009C4913-FF40-4B33-B0B8-8BBCE6DB96BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A12A96D7-4165-406D-838B-E8767EC6558B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12A96D7-4165-406D-838B-E8767EC6558B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12A96D7-4165-406D-838B-E8767EC6558B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12A96D7-4165-406D-838B-E8767EC6558B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
